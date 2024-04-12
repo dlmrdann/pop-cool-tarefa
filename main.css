@@ -1,0 +1,201 @@
+body {
+    font-family: 'Ubuntu' , sans-serif;
+    background-color: rgb(238,238,238) 0%,rgb(169,184,195) 100%;
+}
+
+
+header {
+    background-color: #006a5c;
+    color: #ff7893;
+    padding: 8px 0;
+}
+
+.container {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.titulo {
+    font-weight: 700;
+    margin-left: 16px;
+}
+
+
+header nav li {
+    display: inline;
+    margin-left: 16px;
+    font-size: 18px;
+}
+
+.nav-link {
+    color: #fff;
+}
+
+.nav-link:hover {
+    color: #ff7893;
+}
+
+.news,
+.musica,
+.festival {
+    color: #006a5c;
+    padding: 3rem;
+    padding-bottom: 0;
+}
+
+.carousel-exemplo {
+    background-color: rgba(0, 0, 0, 0.5);
+    max-width: 900px;
+    width: 100%;
+}
+
+.mais-lidas {
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+section h3 {
+    font-weight: 700;
+    border-bottom: 2px solid #ff7893;
+    line-height: 4rem;
+    margin-bottom: 1.5rem;
+    margin-left: 20px;
+    margin-right: 20px;
+    
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgb(211, 210, 214);
+    border-radius: 16px;
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+    background-color: rgb(148, 148, 148);
+}
+
+.icon {
+    width: 20px;
+    border-radius: 16px;
+    justify-content: space-between;
+    display: inline;
+}
+
+.navbar-toggler {
+    border-radius: 10px;
+}
+
+.carousel-caption:hover {
+    color: #006a5c;
+    cursor: pointer;
+}
+
+h4 {
+    color: #fff;
+    align-items: center;
+    text-align: center;
+}
+
+.card {
+    background-color: #ff7893;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: scale(1.03, 1.03);
+}
+
+.social-links img {
+    height: 24px;
+    display: inline;
+}
+
+.social-links li {
+    display: inline;
+    cursor: pointer;
+
+}
+
+footer {
+    background-color: #006a5c;
+    color: #ecf0f1;
+    padding: 16px 0;
+    margin-top: 16px;
+    
+}
+
+/* ---------Media Queries-------------- */
+
+@media screen and (max-width: 676px) {
+    .navbar-expand-sm .navbar-nav {
+        align-items: center;
+        width: 100%;
+    }
+
+    .navbar-expand-sm .navbar-nav li {
+        width: 100%;
+        text-align: center;
+    }
+
+      .container{
+        margin: 0 5%;
+    } 
+
+    header {
+        width: 100%;
+        max-width: 640px;
+    }
+
+    header a img {
+        margin-left: 0rem;
+    }
+
+    header h1{
+        font-size: 20px;
+        margin-left: 40px;
+    }
+    header ul{
+        margin-right: 40px;
+        
+    }
+
+    section{
+        display: block;
+        justify-content: center;
+        
+    }
+
+    section img{
+        width: 100%;
+        margin: 0 5%;
+        padding-top: 20px;
+        
+    }
+
+    .card {
+        color: #fff;
+        background-color: #ff7893;
+        border-radius: 0;
+        align-items: center;
+        margin: 0;
+    }
+
+
+    .news,
+    .musica,
+    .festival {
+        padding: 1.5rem;
+        padding-bottom: 0;
+    }
+
+    .musica {
+        padding-bottom: 1.5rem;
+    }
+
+    .festival {
+        margin-top: 80px;
+    }
+    
+}
