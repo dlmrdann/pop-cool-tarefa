@@ -3,11 +3,16 @@ body {
     background-color: rgb(238,238,238) 0%,rgb(169,184,195) 100%;
 }
 
-
 header {
     background-color: #006a5c;
     color: #ff7893;
     padding: 8px 0;
+}
+
+header nav li {
+    display: inline;
+    margin-left: 16px;
+    font-size: 18px;
 }
 
 .container {
@@ -21,11 +26,9 @@ header {
     margin-left: 16px;
 }
 
-
-header nav li {
-    display: inline;
-    margin-left: 16px;
-    font-size: 18px;
+.navbar-expand-sm {
+    border-bottom: 16px solid #008170;
+    background-color: #008170;
 }
 
 .nav-link {
@@ -36,23 +39,8 @@ header nav li {
     color: #ff7893;
 }
 
-.news,
-.musica,
-.festival {
-    color: #006a5c;
-    padding: 3rem;
-    padding-bottom: 0;
-}
-
-.carousel-exemplo {
-    background-color: rgba(0, 0, 0, 0.5);
-    max-width: 900px;
-    width: 100%;
-}
-
-.mais-lidas {
-    margin-top: 50px;
-    margin-bottom: 100px;
+.nav-pills {
+    margin-bottom: 2rem;
 }
 
 section h3 {
@@ -76,15 +64,14 @@ section h3 {
     background-color: rgb(148, 148, 148);
 }
 
-.icon {
-    width: 20px;
-    border-radius: 16px;
-    justify-content: space-between;
-    display: inline;
+.carousel-caption {
+    max-width: 900px;
+    margin: 0 auto;
 }
 
-.navbar-toggler {
-    border-radius: 10px;
+.carousel-item>img {
+    max-width: 900px;
+    width: 100%;
 }
 
 .carousel-caption:hover {
@@ -100,11 +87,45 @@ h4 {
 
 .card {
     background-color: #ff7893;
+    margin: 0 35px;
     cursor: pointer;
 }
 
 .card:hover {
     transform: scale(1.03, 1.03);
+}
+
+.card img {
+    height: 100%;
+}
+
+.news {
+    margin-top: 60px;
+}
+
+.musica .col {
+    width: 100%;
+}
+
+.festival .col {
+    width: 100%;
+}
+
+#musica {
+    display: grid;
+    grid-template-columns: repeat(3);
+}
+
+#festival {
+    display: grid;
+    grid-template-columns: repeat(3);
+}
+
+.news,
+.musica,
+.festival {
+    padding: 3rem;
+    padding-bottom: 0;
 }
 
 .social-links img {
@@ -118,17 +139,21 @@ h4 {
 
 }
 
+.festival,
+.footer {
+    padding-bottom: 3rem;
+}
+
 footer {
     background-color: #006a5c;
     color: #ecf0f1;
     padding: 16px 0;
     margin-top: 16px;
-    
 }
 
 /* ---------Media Queries-------------- */
 
-@media screen and (max-width: 676px) {
+@media screen and (max-width: 767px) {
     .navbar-expand-sm .navbar-nav {
         align-items: center;
         width: 100%;
@@ -139,63 +164,34 @@ footer {
         text-align: center;
     }
 
-      .container{
-        margin: 0 5%;
-    } 
-
-    header {
-        width: 100%;
-        max-width: 640px;
+    .container {
+        max-width: 90%;
+        display: block;
     }
 
-    header a img {
-        margin-left: 0rem;
+    #news {
+        display: block;
+        font-size: 1.5em;
+        margin-bottom: 56px;
     }
 
-    header h1{
-        font-size: 20px;
-        margin-left: 40px;
-    }
-    header ul{
-        margin-right: 40px;
-        
-    }
-
-    section{
+    #carousel-exemplo {
         display: block;
         justify-content: center;
-        
+        width: 100vw;
+        margin-right: 0;
     }
 
-    section img{
-        width: 100%;
-        margin: 0 5%;
-        padding-top: 20px;
-        
+    #musica {
+        display: block;
     }
 
-    .card {
-        color: #fff;
-        background-color: #ff7893;
-        border-radius: 0;
-        align-items: center;
-        margin: 0;
+    .musica .card {
+        margin-bottom: 32px;
     }
 
-
-    .news,
-    .musica,
-    .festival {
-        padding: 1.5rem;
-        padding-bottom: 0;
+    .container .card {
+        width: 90%;
     }
-
-    .musica {
-        padding-bottom: 1.5rem;
-    }
-
-    .festival {
-        margin-top: 80px;
-    }
-    
 }
+
