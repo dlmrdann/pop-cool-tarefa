@@ -4,15 +4,14 @@ body {
 }
 
 header {
-    background-color: #006a5c;
+    background-color: black;
     color: #ff7893;
-    padding: 8px 0;
 }
 
 header nav li {
     display: inline;
     margin-left: 16px;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .container {
@@ -23,12 +22,11 @@ header nav li {
 
 .titulo {
     font-weight: 700;
-    margin-left: 16px;
 }
 
 .navbar-expand-sm {
-    border-bottom: 16px solid #008170;
-    background-color: #008170;
+    border-bottom: 0px solid black;
+    background-color: black;
 }
 
 .nav-link {
@@ -41,6 +39,11 @@ header nav li {
 
 .nav-pills {
     margin-bottom: 2rem;
+}
+
+.navbar-toggler-icon {
+    background-color: #ff7893;;
+    border-radius: 8px;
 }
 
 section h3 {
@@ -95,10 +98,6 @@ h4 {
     transform: scale(1.03, 1.03);
 }
 
-.card img {
-    height: 100%;
-}
-
 .news {
     margin-top: 60px;
 }
@@ -111,21 +110,11 @@ h4 {
     width: 100%;
 }
 
-#musica {
-    display: grid;
-    grid-template-columns: repeat(3);
-}
-
-#festival {
-    display: grid;
-    grid-template-columns: repeat(3);
-}
-
 .news,
 .musica,
 .festival {
     padding: 3rem;
-    padding-bottom: 0;
+    padding-bottom: 20px;
 }
 
 .social-links img {
@@ -139,17 +128,12 @@ h4 {
 
 }
 
-.festival,
-.footer {
-    padding-bottom: 3rem;
-}
-
 footer {
-    background-color: #006a5c;
-    color: #ecf0f1;
+    background-color: black;
+    color: #fff;
     padding: 16px 0;
-    margin-top: 16px;
     width: 100%;
+    
 }
 
 /* ---------Media Queries-------------- */
@@ -159,6 +143,18 @@ footer {
         align-items: center;
         width: 100%;
     }
+
+    .navbar-nav {
+        flex-direction: column;   
+      }
+    
+      .nav-link {   
+        padding: 0.5rem 0;   
+      }
+    
+      .titulo {   
+        margin-left: 0;   
+      }
 
     .navbar-expand-sm .navbar-nav li {
         width: 100%;
@@ -183,7 +179,8 @@ footer {
         margin-right: 0;
     }
 
-    #musica {
+    #musica,
+    #festival {
         display: block;
     }
 
@@ -191,8 +188,33 @@ footer {
         margin-bottom: 32px;
     }
 
+    .festival .card {
+        margin-bottom: 32px;
+    }
+
     .container .card {
         width: 90%;
     }
+
+    /* Estilos para dispositivos maiores (acima de 1024px) */
+
+@media (min-width: 1025px) {
+    .navbar-expand-sm .navbar-nav {
+        align-items: center;
+        width: 100%;
+    }
+
+    .festival .card {
+        margin-bottom: 32px;
+    }
+
+    footer {
+        font-size: small;
+        max-width: 1280px;
+        width: 100%;
+        margin: 0 auto;
+    }
+  }
+
 }
 
