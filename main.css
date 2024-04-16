@@ -64,7 +64,7 @@ section h3 {
 
 .carousel-control-prev-icon:hover,
 .carousel-control-next-icon:hover {
-    background-color: rgb(148, 148, 148);
+    background-color: #ff7893;
 }
 
 .carousel-caption {
@@ -78,7 +78,7 @@ section h3 {
 }
 
 .carousel-caption:hover {
-    color: #006a5c;
+    color: #ff7893;
     cursor: pointer;
 }
 
@@ -92,6 +92,7 @@ h4 {
     background-color: #ff7893;
     margin: 0 35px;
     cursor: pointer;
+    margin-top: 16px;
 }
 
 .card:hover {
@@ -194,6 +195,27 @@ footer {
 
     .container .card {
         width: 90%;
+    }
+
+    .carousel-caption:hover {
+        color: #ff7893;
+        cursor: pointer;
+        font-size: small;
+    }
+
+    h2 {
+        font-size: small;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+    max-width: 12px;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+    background-color: rgb(211, 210, 214);
+    border-radius: 12px;
     }
 
     /* Estilos para dispositivos maiores (acima de 1024px) */
